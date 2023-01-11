@@ -25,8 +25,7 @@
 #define FX EffectManager::Get()
 #define SFX Audio::Get()
 
-#define MONSTER MonsterManager::Get()
-#define SKILL SkillManager::Get()
+#define SCENE SceneManager::Get()
 
 #define SLOT_SIZE 29.0f
 
@@ -154,10 +153,11 @@ using namespace Utility;
 #include "Objects/Basic/InstancingTileMap.h"
 #include "Objects/Basic/ImageFont.h"
 
-
+#include "Objects/Title/PressEnter.h"
 
 //Scene
 #include "Scenes/Scene.h"
+#include "Scenes/SceneManager.h"
 #include "GameManager/GameManager.h"
 
 extern HWND hWnd;

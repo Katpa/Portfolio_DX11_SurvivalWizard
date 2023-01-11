@@ -2,63 +2,63 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\DX2D_2204.exe</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\DX2D_2204.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelEffect.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelEffect.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelEffectRemoveWhite.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelEffectRemoveWhite.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelHorizentalBar.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelHorizentalBar.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelInstancing.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelInstancing.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelMulti.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelMulti.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelCollider.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelCollider.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelColor.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelColor.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelFilter.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelFilter.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelGrayscale.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelGrayscale.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelOutline.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelOutline.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelProgressBar.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelProgressBar.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelUV.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelUV.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\PixelVerticalBar.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\PixelVerticalBar.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\Tutorial.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\Tutorial.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\VertexCollider.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\VertexCollider.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\VertexColor.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\VertexColor.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\VertexInstancing.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\VertexInstancing.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\SBAuser\Downloads\Portpolio file\x64\Release\VertexUV.cso</FullPath>
+      <FullPath>C:\Users\SBAuser\Desktop\Projects\SurvivalWizard\Portfolio_DX11_SurvivalWizard\x64\Release\VertexUV.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

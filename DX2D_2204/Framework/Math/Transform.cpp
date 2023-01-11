@@ -8,6 +8,15 @@ Transform::Transform()
 
 void Transform::UpdateWorld()
 {
+	//Dirty flag
+	if (prevLocalPosition == localPosition &&
+		prevLocalRotation.x == localRotation.x &&
+		prevLocalRotation.y == localRotation.y &&
+		prevLocalRotation.z == localRotation.z)
+	{
+		return;
+	}
+
 	S = XMMatrixScaling(localScale.x, localScale.y, 1.0f);
 	R = XMMatrixRotationRollPitchYaw(localRotation.x, localRotation.y, localRotation.z);
 	T = XMMatrixTranslation(localPosition.x, localPosition.y, 0.0f);
@@ -28,6 +37,11 @@ void Transform::UpdateWorld()
 
 	XMStoreFloat2(&globalPosition, outT);
 	XMStoreFloat2(&globalScale, outS);
+
+	prevLocalPosition = localPosition;
+	prevLocalRotation.x = localRotation.x;
+	prevLocalRotation.y = localRotation.y;
+	prevLocalRotation.z = localRotation.z;
 }
 
 void Transform::RenderUI()

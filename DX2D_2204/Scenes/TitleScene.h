@@ -8,4 +8,9 @@ public:
 
 	virtual void Update() override;
 	virtual void Render() override;
+
+private:
+	Quad* titleScreen;
+	PressEnter* pressEnter;
+
 };

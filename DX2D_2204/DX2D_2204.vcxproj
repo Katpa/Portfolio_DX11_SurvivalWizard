@@ -162,8 +162,6 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Algorithm\AStar.h" />
-    <ClInclude Include="Algorithm\AStarPlus.h" />
     <ClInclude Include="Algorithm\Heap.h" />
     <ClInclude Include="Algorithm\Node.h" />
     <ClInclude Include="DX2D_2204.h" />
@@ -214,22 +212,19 @@
     <ClInclude Include="Objects\Basic\EffectManager.h" />
     <ClInclude Include="Objects\Basic\IButton.h" />
     <ClInclude Include="Objects\Basic\ImageFont.h" />
-    <ClInclude Include="Objects\Basic\InstancingTileMap.h" />
     <ClInclude Include="Objects\Basic\Isometric.h" />
     <ClInclude Include="Objects\Basic\ProgressBar.h" />
     <ClInclude Include="Objects\Basic\Quad.h" />
     <ClInclude Include="Objects\Basic\GameObject.h" />
     <ClInclude Include="Objects\Basic\UpDownButton.h" />
+    <ClInclude Include="Objects\Title\PressEnter.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="Scenes\DiabloScene.h" />
     <ClInclude Include="Scenes\Scene.h" />
-    <ClInclude Include="Scenes\MapToolScene.h" />
+    <ClInclude Include="Scenes\SceneManager.h" />
     <ClInclude Include="Scenes\TitleScene.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm\AStar.cpp" />
-    <ClCompile Include="Algorithm\AStarPlus.cpp" />
     <ClCompile Include="Algorithm\Heap.cpp" />
     <ClCompile Include="Algorithm\Node.cpp" />
     <ClCompile Include="DX2D_2204.cpp" />
@@ -279,14 +274,13 @@
     <ClCompile Include="Objects\Basic\EffectManager.cpp" />
     <ClCompile Include="Objects\Basic\IButton.cpp" />
     <ClCompile Include="Objects\Basic\ImageFont.cpp" />
-    <ClCompile Include="Objects\Basic\InstancingTileMap.cpp" />
     <ClCompile Include="Objects\Basic\Isometric.cpp" />
     <ClCompile Include="Objects\Basic\ProgressBar.cpp" />
     <ClCompile Include="Objects\Basic\Quad.cpp" />
     <ClCompile Include="Objects\Basic\GameObject.cpp" />
     <ClCompile Include="Objects\Basic\UpDownButton.cpp" />
-    <ClCompile Include="Scenes\DiabloScene.cpp" />
-    <ClCompile Include="Scenes\MapToolScene.cpp" />
+    <ClCompile Include="Objects\Title\PressEnter.cpp" />
+    <ClCompile Include="Scenes\SceneManager.cpp" />
     <ClCompile Include="Scenes\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>

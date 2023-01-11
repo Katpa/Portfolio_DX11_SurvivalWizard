@@ -3,10 +3,10 @@
 
 DataManager::DataManager()
 {
-	LoadCharacterData();
-    LoadMonsterData();
-    LoadItemData();
-    LoadExpData();
+	//LoadCharacterData();
+    //LoadMonsterData();
+    //LoadItemData();
+    //LoadExpData();
 }
 
 DataManager::~DataManager()

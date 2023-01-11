@@ -1,20 +1,19 @@
 #include "Framework.h"
 
-#include "Scenes/MapToolScene.h"
-#include "Scenes/DiabloScene.h"
 #include "Scenes/TitleScene.h"
 
 GameManager::GameManager()
 {
 	Create();
 
-	//scene = new MapToolScene();
-	scene = new DiabloScene();
+	SCENE->Add("title", new TitleScene());
+	SCENE->Set("title");
+	//scene = new TitleScene();
 }
 
 GameManager::~GameManager()
 {
-	delete scene;
+	//delete scene;
 
 	Delete();
 }
@@ -26,7 +25,8 @@ void GameManager::Update()
 	FX->Update();
 	Audio::Get()->Update();
 
-	scene->Update();
+	SCENE->Update();
+	//scene->Update();
 
 	CAM->Update();
 }
@@ -39,7 +39,8 @@ void GameManager::Render()
 	{
 		renderFrame -= renderDelay;
 
-		scene->PreRender();
+		SCENE->PreRender();
+		//scene->PreRender();
 
 		Device::Get()->Clear();
 
@@ -56,12 +57,14 @@ void GameManager::Render()
 		Environment::Get()->SetViewPort();
 		Environment::Get()->SetOrtographic();
 
-		scene->Render();
+		SCENE->Render();
+		//scene->Render();
 		FX->Render();
 
 		//CAM->RenderUI();
 		Environment::Get()->SetUIView();
-		scene->PostRender();
+		SCENE->PostRender();
+		//scene->PostRender();
 
 		ImGui::Render();
 		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
@@ -81,6 +84,7 @@ void GameManager::Create()
 	EffectManager::Get();
 	Audio::Get();
 	DataManager::Get();
+	SceneManager::Get();
 	
 	Font::Get()->Add("default", L"kodia");
 
@@ -101,6 +105,7 @@ void GameManager::Delete()
 	Audio::Delete();
 	DataManager::Delete();
 	Font::Delete();
+	SceneManager::Delete();
 
 	Texture::Delete();
 	Shader::Delete();

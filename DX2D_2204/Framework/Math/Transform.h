@@ -32,8 +32,10 @@ public:
 protected:
 	string tag;
 
-	bool isActive;	
+	bool isActive;
 
+	Vector2 prevLocalPosition;
+	Float3 prevLocalRotation;
 	Vector2 localPosition;
 	Float3 localRotation;
 	Vector2 localScale;
