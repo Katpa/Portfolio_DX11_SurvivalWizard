@@ -7,15 +7,16 @@ TitleScene::TitleScene()
 	titleScreen->SetTexture(Texture::Add(L"Textures/BG/TitleBG.png"));
 	titleScreen->UpdateWorld();
 
+	menu = new TitleMenu();
+
 	pressEnter = new PressEnter();
 	pressEnter->Position() = Vector2(CENTER_X, 200);
 	pressEnter->SetActive();
+	pressEnter->SetFunc(bind(&TitleScene::ShowMenu, this));
 
 	titleLogo = new Quad(Vector2(WIN_WIDTH, WIN_HEIGHT), Vector2(CENTER_X, CENTER_Y));
 	titleLogo->SetTexture(Texture::Add(L"Textures/Text/TitleLogo.png"));
 	titleLogo->UpdateWorld();
-
-	menu = new TitleMenu();
 
 	//리더보드 추가 고민해보기
 }
@@ -52,4 +53,10 @@ void TitleScene::Active()
 {
 	CAM->SetTarget(nullptr);
 	CAM->Position() = Vector2(CENTER_X, CENTER_Y);
+	menu->Deactive();
+}
+
+void TitleScene::ShowMenu()
+{
+	menu->Active();
 }

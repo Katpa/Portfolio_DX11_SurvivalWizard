@@ -13,6 +13,7 @@ public:
 	void Update();
 	void Render();
 	void Active();
+	void Deactive();
 
 private:
 	void Control();

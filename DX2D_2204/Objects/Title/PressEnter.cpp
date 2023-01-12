@@ -22,16 +22,15 @@ void PressEnter::Control()
 {
 	if (KEY_DOWN(VK_RETURN))
 	{
+        curClip->Stop();
         curClip = clips[END];
         curClip->Play();
-        if (func)
-            func;
+        if (func != nullptr)
+            func();
 	}
-	else
-	{
-        curClip->Update();
-        UpdateWorld();
-	}
+
+    curClip->Update();
+    UpdateWorld();
 }
 
 void PressEnter::SetClip()
@@ -63,6 +62,7 @@ void PressEnter::SetActive()
     if (isActive) return;
 
     isActive = true;
+    curClip->Stop();
     curClip = clips[LOOP];
     curClip->Play();
 }

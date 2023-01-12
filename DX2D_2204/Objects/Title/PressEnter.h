@@ -25,5 +25,6 @@ private:
 	void EndAnim();
 
 private:
-	CallBack func;
+	CallBack func = nullptr;
+	
 };

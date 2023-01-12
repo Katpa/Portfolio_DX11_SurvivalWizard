@@ -10,6 +10,7 @@ public:
 	virtual void Render() override;
 
 	virtual void Active() override;
+	void ShowMenu();
 
 private:
 	Quad* titleScreen;

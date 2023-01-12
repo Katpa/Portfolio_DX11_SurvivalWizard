@@ -60,11 +60,16 @@ void TitleMenu::Active()
 	isActive = true;
 }
 
+void TitleMenu::Deactive()
+{
+	isActive = false;
+}
+
 void TitleMenu::Control()
 {
-	if (KEY_DOWN(VK_DOWN))
+	if (KEY_DOWN(VK_DOWN) || KEY_DOWN('S'))
 		menuNum++;
-	else if (KEY_DOWN(VK_UP))
+	else if (KEY_DOWN(VK_UP) || KEY_DOWN('W'))
 		menuNum--;
 
 	if (menuNum < 0)
@@ -124,7 +129,7 @@ void TitleMenu::Init()
 	options.resize(MAX_MENU * 2);
 	for (int i = 0; i < MAX_MENU * 2; i++)
 	{
-		wstring file = path + to_wstring(i) + L".png";
+		wstring file = path + to_wstring(i + 1) + L".png";
 		options[i] = new Quad(file);
 		options[i]->Position() = Vector2(CENTER_X, CENTER_Y - 90.0f - INTERVAL_OPTION * (i % MAX_MENU));
 		options[i]->UpdateWorld();
