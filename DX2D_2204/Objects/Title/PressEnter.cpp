@@ -3,8 +3,8 @@
 PressEnter::PressEnter() : AnimObject()
 {
     isActive = false;
+    func = NULL;
     SetClip();
-
 }
 
 PressEnter::~PressEnter()
@@ -24,6 +24,8 @@ void PressEnter::Control()
 	{
         curClip = clips[END];
         curClip->Play();
+        if (func)
+            func;
 	}
 	else
 	{
@@ -36,10 +38,10 @@ void PressEnter::SetClip()
 {
     wstring file = L"Textures/Text/PressEnter.png";
     Texture* texture = Texture::Add(file);
-    Vector2 cutSize = texture->GetSize() / Vector2(37, 1);
+    Vector2 cutSize = texture->GetSize() / Vector2(11, 2);
     vector<Frame*> frames;
 
-    for (int i = 0; i < 37; i++)
+    for (int i = 0; i < 11; i++)
     {
         frames.push_back(new Frame(file, cutSize.x * i, 0, cutSize.x, cutSize.y));
     }
@@ -48,9 +50,9 @@ void PressEnter::SetClip()
 
     frames.clear();
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
-        frames.push_back(new Frame(file, cutSize.x * i, 0, cutSize.x, cutSize.y));
+        frames.push_back(new Frame(file, cutSize.x * i, cutSize.y, cutSize.x, cutSize.y));
     }
     clips[END] = new Clip(frames, Clip::END, 0.05f);
     clips[END]->SetEvent(1.0f, bind(&PressEnter::EndAnim, this));

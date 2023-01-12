@@ -13,6 +13,8 @@ private:
 	void Create();
 	void Delete();
 
+	void SetScenes();
+
 private:
 	Scene* scene;
 

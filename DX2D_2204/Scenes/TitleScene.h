@@ -9,8 +9,12 @@ public:
 	virtual void Update() override;
 	virtual void Render() override;
 
+	virtual void Active() override;
+
 private:
 	Quad* titleScreen;
+	Quad* titleLogo;
 	PressEnter* pressEnter;
 
+	TitleMenu* menu;
 };

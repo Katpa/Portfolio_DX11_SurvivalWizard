@@ -1,20 +1,18 @@
 #include "Framework.h"
 
 #include "Scenes/TitleScene.h"
+#include "Scenes/MainGameScene.h"
 
 GameManager::GameManager()
 {
 	Create();
 
-	SCENE->Add("title", new TitleScene());
-	SCENE->Set("title");
+	SetScenes();
 	//scene = new TitleScene();
 }
 
 GameManager::~GameManager()
 {
-	//delete scene;
-
 	Delete();
 }
 
@@ -26,9 +24,10 @@ void GameManager::Update()
 	Audio::Get()->Update();
 
 	SCENE->Update();
-	//scene->Update();
 
 	CAM->Update();
+
+	SCENE->NextScene();
 }
 
 void GameManager::Render()
@@ -40,7 +39,6 @@ void GameManager::Render()
 		renderFrame -= renderDelay;
 
 		SCENE->PreRender();
-		//scene->PreRender();
 
 		Device::Get()->Clear();
 
@@ -58,13 +56,11 @@ void GameManager::Render()
 		Environment::Get()->SetOrtographic();
 
 		SCENE->Render();
-		//scene->Render();
 		FX->Render();
 
 		//CAM->RenderUI();
 		Environment::Get()->SetUIView();
 		SCENE->PostRender();
-		//scene->PostRender();
 
 		ImGui::Render();
 		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
@@ -72,6 +68,8 @@ void GameManager::Render()
 		Font::Get()->GetDC()->EndDraw();
 
 		Device::Get()->Present();
+
+		//여기서 바꿀까??
 	}
 }
 
@@ -113,4 +111,12 @@ void GameManager::Delete()
 	ImGui_ImplDX11_Shutdown();
 	ImGui_ImplWin32_Shutdown();
 	ImGui::DestroyContext();
+}
+
+void GameManager::SetScenes()
+{
+	SCENE->Add("title", new TitleScene());
+	SCENE->Set("title");
+
+	SCENE->Add("MainGame", new MainGameScene());
 }

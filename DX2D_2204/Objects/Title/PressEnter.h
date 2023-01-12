@@ -14,11 +14,16 @@ public:
 	~PressEnter();
 
 	void Update();
-	
+
+	void SetActive();
+	void SetFunc(CallBack func) { this->func = func; }
+
 private:
 	void Control();
 	void SetClip();
 
-	void SetActive();
 	void EndAnim();
+
+private:
+	CallBack func;
 };

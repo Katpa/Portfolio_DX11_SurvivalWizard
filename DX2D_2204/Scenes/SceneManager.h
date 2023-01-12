@@ -13,9 +13,10 @@ public:
 
 	void Add(string key, Scene* scene);
 	void Set(string key);
+	void NextScene();
 
 private:
 	map<string, Scene*> scenes;
 	Scene* curScene = nullptr;
-	string curScenekey;
+	string nextSceneKey;
 };

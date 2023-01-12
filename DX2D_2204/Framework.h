@@ -154,6 +154,7 @@ using namespace Utility;
 #include "Objects/Basic/ImageFont.h"
 
 #include "Objects/Title/PressEnter.h"
+#include "Objects/Title/TitleMenu.h"
 
 //Scene
 #include "Scenes/Scene.h"

@@ -28,7 +28,7 @@ void AnimObject::Update()
 
 void AnimObject::Render()
 {
-	if (curClip == nullptr) return;
+	if (curClip == nullptr || !isActive) return;
 
 	worldBuffer->Set(world);
 	worldBuffer->SetVS(0);

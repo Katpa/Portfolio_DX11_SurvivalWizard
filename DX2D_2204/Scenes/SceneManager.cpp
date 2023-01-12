@@ -54,5 +54,15 @@ void SceneManager::Set(string key)
 {
 	if (scenes.count(key) == 0) return;
 
-	curScene = scenes[key];
+	nextSceneKey = key;
+}
+
+void SceneManager::NextScene()
+{
+	if (nextSceneKey == "") return;
+
+	curScene = scenes[nextSceneKey];
+	curScene->Active();
+
+	nextSceneKey = "";
 }
