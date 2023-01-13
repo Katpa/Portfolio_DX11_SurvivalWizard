@@ -1,6 +1,4 @@
-c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.pch
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\vc143.pdb
-c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\framework.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\pixelshader.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\texture.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\rendertarget.obj
@@ -52,6 +50,8 @@ c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\d
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\progressbar.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\isometric.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\imagefont.obj
+c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.pch
+c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\framework.obj
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\pixeleffect.cso
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\pixeleffectremovewhite.cso
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\pixelhorizentalbar.cso
@@ -70,12 +70,12 @@ c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\vertexcolor.cso
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\vertexinstancing.cso
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\vertexuv.cso
+c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.lib
+c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.exp
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.exe
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.ipdb
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.pdb
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.iobj
-c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.lib
-c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\x64\release\dx2d_2204.exp
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.res
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.tlog\cl.command.1.tlog
 c:\users\sbauser\desktop\projects\survivalwizard\portfolio_dx11_survivalwizard\dx2d_2204\x64\release\dx2d_2204.tlog\cl.read.1.tlog
