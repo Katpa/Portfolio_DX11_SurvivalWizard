@@ -136,7 +136,7 @@ void TitleMenu::Init()
 	}
 
 	htp = new Quad(L"Textures/Title/HTP.png");
-	htp->Position() = Vector2(CENTER_X, CENTER_X);
+	htp->Position() = Vector2(CENTER_X, CENTER_Y);
 	htp->Active() = false;
 	htp->UpdateWorld();
 
@@ -146,6 +146,6 @@ void TitleMenu::Init()
 	darker->UpdateWorld();
 
 	pressEnter = new PressEnter();
-	pressEnter->Position() = {CENTER_X, CENTER_Y - htp->ReturnTexture()->GetSize().y * 0.5f};
+	pressEnter->Position() = {CENTER_X, CENTER_Y - 300.0f };
 	pressEnter->SetFunc(bind(&TitleMenu::HideHTP, this));
 }

@@ -5,7 +5,7 @@
 
 #define TEX_SCALE_MULTI 1.5f
 
-#define WIN_WIDTH 960
+#define WIN_WIDTH 1280
 #define WIN_HEIGHT 720
 
 #define CENTER_X (WIN_WIDTH * 0.5f)
@@ -152,9 +152,15 @@ using namespace Utility;
 #include "Objects/Basic/UpDownButton.h"
 #include "Objects/Basic/InstancingTileMap.h"
 #include "Objects/Basic/ImageFont.h"
+#include "Objects/Actors/Actor.h"
 
 #include "Objects/Title/PressEnter.h"
 #include "Objects/Title/TitleMenu.h"
+
+#include "Objects/items/Equipment.h"
+#include "Objects/Items/Weapon.h"
+
+#include "Objects/Actors/Player.h"
 
 //Scene
 #include "Scenes/Scene.h"
