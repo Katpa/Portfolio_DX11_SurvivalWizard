@@ -22,9 +22,7 @@ void PressEnter::Control()
 {
 	if (KEY_DOWN(VK_RETURN))
 	{
-        curClip->Stop();
-        curClip = clips[END];
-        curClip->Play();
+        isActive = false;
         if (func != nullptr)
             func();
 	}
@@ -46,15 +44,6 @@ void PressEnter::SetClip()
     }
     clips[LOOP] = new Clip(frames, Clip::LOOP, 0.05f);
     curClip = clips[LOOP];
-
-    frames.clear();
-
-    for (int i = 0; i < 4; i++)
-    {
-        frames.push_back(new Frame(file, cutSize.x * i, cutSize.y, cutSize.x, cutSize.y));
-    }
-    clips[END] = new Clip(frames, Clip::END, 0.05f);
-    clips[END]->SetEvent(1.0f, bind(&PressEnter::EndAnim, this));
 }
 
 void PressEnter::SetActive()
@@ -65,9 +54,4 @@ void PressEnter::SetActive()
     curClip->Stop();
     curClip = clips[LOOP];
     curClip->Play();
-}
-
-void PressEnter::EndAnim()
-{
-    isActive = false;
 }
