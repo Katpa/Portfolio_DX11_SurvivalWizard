@@ -1,7 +1,5 @@
 #pragma once
 
-class Missile;
-
 class Weapon : public Equipment
 {
 private:

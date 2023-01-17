@@ -2,6 +2,8 @@
 
 Player::Player()
 {
+
+	MISSILE->GetPlayer(this);
 }
 
 Player::~Player()

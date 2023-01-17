@@ -3,6 +3,7 @@
 RectCollider::RectCollider(Vector2 size) : size(size)
 {
     type = Type::RECT;
+    maxLength = sqrt(size.x * size.x + size.y * size.y);
 
     CreateLine();
 }
@@ -23,6 +24,9 @@ bool RectCollider::IsPointCollision(Vector2 point)
 
 bool RectCollider::IsRectCollision(RectCollider* rect, Vector2* overlap)
 {
+    //최적화를 위한 최소의 필요조건 충족 확인
+    if (MaxLength() + rect->MaxLength() < (GlobalPosition() - rect->GlobalPosition()).Length()) return false;
+
     if (overlap)
         return IsAABB(rect, overlap);
 
@@ -39,6 +43,9 @@ bool RectCollider::IsCircleCollision(CircleCollider* circle)
     Vector2 ea2 = nea2 * obb.halfSize.y;
 
     Vector2 distance = circle->GlobalPosition() - obb.position;
+
+    //최적화를 위한 최소의 필요조건 충족 확인
+    if (distance.Length() > MaxLength() + circle->Radius()) return false;
 
     float lengthA = abs(Vector2::Dot(distance, nea1));
     float lengthB = abs(Vector2::Dot(distance, nea2));

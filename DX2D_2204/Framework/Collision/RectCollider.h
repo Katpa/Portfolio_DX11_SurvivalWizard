@@ -20,6 +20,7 @@ public:
 	ObbDesc GetObb();
 
 	Vector2 Size() { return size * GlobalScale(); }
+	float MaxLength() { return maxLength; }
 
 	float R() { return GlobalPosition().x + Size().x * 0.5f; }
 	float L() { return GlobalPosition().x - Size().x * 0.5f; }
@@ -37,4 +38,5 @@ private:
 	Vector2 size;
 
 	ObbDesc obbDesc;
+	float maxLength;
 };
