@@ -1,0 +1,2 @@
+speed,dmg,filePath,isCircle,animLength,boomVFX
+700,10,Textures/Missile/FireBall.png,1,5,FireBall

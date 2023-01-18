@@ -23,7 +23,7 @@ protected:
 	void SetCollider(Vector2 size, bool isCircle);
 
 private:
-	virtual void SetAnim(wstring filePath, int animLength, bool isCircle) = 0;
+	virtual void SetAnim(wstring filePath, int animLength, bool isCircle) {};
 	virtual void Move() = 0;
 
 	void LifeTimer();

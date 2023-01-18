@@ -2,6 +2,9 @@
 
 class Player : public Actor
 {
+private:
+	
+
 public:
 	Player();
 	~Player();

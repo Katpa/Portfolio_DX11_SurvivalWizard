@@ -15,7 +15,15 @@ LinearMissile::~LinearMissile()
 	delete collider;
 }
 
-void LinearMissile::Fire(Vector2 curPos, Vector2 direction, bool isPlayer, float dmgFactor = 0.0f)
+void LinearMissile::Update()
+{
+}
+
+void LinearMissile::Render()
+{
+}
+
+void LinearMissile::Fire(Vector2 curPos, Vector2 direction, bool isPlayer, float dmgFactor)
 {
 	localPosition = curPos;
 	this->direction = direction;

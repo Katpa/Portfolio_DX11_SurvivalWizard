@@ -3,6 +3,8 @@
 
 MainGameScene::MainGameScene()
 {
+	player = new Player();
+	CAM->SetTarget(player);
 }
 
 MainGameScene::~MainGameScene()
@@ -11,10 +13,12 @@ MainGameScene::~MainGameScene()
 
 void MainGameScene::Update()
 {
+	player->Update();
 }
 
 void MainGameScene::Render()
 {
+	player->Render();
 }
 
 void MainGameScene::Active()

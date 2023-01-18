@@ -160,12 +160,13 @@ using namespace Utility;
 
 #include "Objects/Missile/Missile.h"
 #include "Objects/Missile/LinearMissile.h"
-#include "Managers/MissileManager.h"
 
 #include "Objects/items/Equipment.h"
 #include "Objects/Items/Weapon.h"
 
 #include "Objects/Actors/Player.h"
+
+#include "Managers/MissileManager.h"
 
 //Scene
 #include "Scenes/Scene.h"

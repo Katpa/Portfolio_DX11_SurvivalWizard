@@ -27,5 +27,6 @@ public:
 
 	void LinkVar();
 
-
+private:
+	Player* player;
 };
