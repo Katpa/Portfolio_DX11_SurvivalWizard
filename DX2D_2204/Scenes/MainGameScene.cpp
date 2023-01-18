@@ -18,7 +18,8 @@ void MainGameScene::Update()
 
 void MainGameScene::Render()
 {
-	player->Render();
+	//player->Render();
+	ZOrder::Get()->Render();
 }
 
 void MainGameScene::Active()

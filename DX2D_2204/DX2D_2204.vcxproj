@@ -206,7 +206,6 @@
     <ClInclude Include="Libraries\ImGui\dirent\dirent.h" />
     <ClInclude Include="Libraries\ImGui\ImGuiFileDialog.h" />
     <ClInclude Include="Libraries\ImGui\ImGuiFileDialogConfig.h" />
-    <ClInclude Include="Managers\MissileManager.h" />
     <ClInclude Include="Objects\Actors\Actor.h" />
     <ClInclude Include="Objects\Actors\Player.h" />
     <ClInclude Include="Objects\Basic\AnimObject.h" />
@@ -220,10 +219,9 @@
     <ClInclude Include="Objects\Basic\Quad.h" />
     <ClInclude Include="Objects\Basic\GameObject.h" />
     <ClInclude Include="Objects\Basic\UpDownButton.h" />
+    <ClInclude Include="Objects\Items\Accessary.h" />
     <ClInclude Include="Objects\Items\Equipment.h" />
     <ClInclude Include="Objects\Items\Weapon.h" />
-    <ClInclude Include="Objects\Missile\LinearMissile.h" />
-    <ClInclude Include="Objects\Missile\Missile.h" />
     <ClInclude Include="Objects\Title\PressEnter.h" />
     <ClInclude Include="Objects\Title\TitleMenu.h" />
     <ClInclude Include="Resource.h" />
@@ -277,7 +275,6 @@
     <ClCompile Include="Libraries\ImGui\ImGuiFileDialog.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Managers\MissileManager.cpp" />
     <ClCompile Include="Objects\Actors\Actor.cpp" />
     <ClCompile Include="Objects\Actors\Player.cpp" />
     <ClCompile Include="Objects\Basic\AnimObject.cpp" />
@@ -291,10 +288,9 @@
     <ClCompile Include="Objects\Basic\Quad.cpp" />
     <ClCompile Include="Objects\Basic\GameObject.cpp" />
     <ClCompile Include="Objects\Basic\UpDownButton.cpp" />
+    <ClCompile Include="Objects\Items\Accessary.cpp" />
     <ClCompile Include="Objects\Items\Equipment.cpp" />
     <ClCompile Include="Objects\Items\Weapon.cpp" />
-    <ClCompile Include="Objects\Missile\LinearMissile.cpp" />
-    <ClCompile Include="Objects\Missile\Missile.cpp" />
     <ClCompile Include="Objects\Title\PressEnter.cpp" />
     <ClCompile Include="Objects\Title\TitleMenu.cpp" />
     <ClCompile Include="Scenes\MainGameScene.cpp" />

@@ -210,13 +210,7 @@
     <ClInclude Include="Objects\Items\Weapon.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Objects\Missile\Missile.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Objects\Missile\LinearMissile.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Managers\MissileManager.h">
+    <ClInclude Include="Objects\Items\Accessary.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -389,13 +383,7 @@
     <ClCompile Include="Objects\Items\Weapon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Objects\Missile\Missile.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Objects\Missile\LinearMissile.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Managers\MissileManager.cpp">
+    <ClCompile Include="Objects\Items\Accessary.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

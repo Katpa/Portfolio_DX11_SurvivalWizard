@@ -61,8 +61,8 @@ void MisslieManager::SetMissiles()
 	MissileData data = DataManager::Get()->GetMissileData("FireBall");
 	string key = data.boomVFX;
 
-	//for(int i = 0; i < 100; i++)
-	//	missiles[key].push_back(new LinearMissile(data));
+	for(int i = 0; i < 100; i++)
+		missiles[key].push_back(new LinearMissile(data));
 
 	//앞으로 여기에 다른 미사일들도 채워나가면 된다
 }

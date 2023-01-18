@@ -28,7 +28,7 @@
 #define SCENE SceneManager::Get()
 #define MISSILE MisslieManager::Get()
 
-#define SLOT_SIZE 29.0f
+#define EQUIPMENT_MAX_LEVEL 10
 
 #define LERP(s, e, t) (s + (e - s)*t)
 
@@ -158,15 +158,16 @@ using namespace Utility;
 #include "Objects/Title/PressEnter.h"
 #include "Objects/Title/TitleMenu.h"
 
-#include "Objects/Missile/Missile.h"
-#include "Objects/Missile/LinearMissile.h"
+//#include "Objects/Missile/Missile.h"
+//#include "Objects/Missile/LinearMissile.h"
 
 #include "Objects/items/Equipment.h"
 #include "Objects/Items/Weapon.h"
+#include "Objects/Items/Accessary.h"
 
 #include "Objects/Actors/Player.h"
 
-#include "Managers/MissileManager.h"
+//#include "Managers/MissileManager.h"
 
 //Scene
 #include "Scenes/Scene.h"

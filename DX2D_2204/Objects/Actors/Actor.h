@@ -26,11 +26,13 @@ public:
 	float ReturnDepth() { return bodyCollider->GlobalPosition().y; }
 	RectCollider* ReturnCollider() { return bodyCollider; }
 
+protected:
+	void SetAnim(State _state);
+
 private:
 	virtual void SetClip() = 0;
 	virtual void Move() = 0;
 	virtual void Attack() = 0;
-	void SetAnim(State _state);
 
 protected:
 	float curHP = 0;
