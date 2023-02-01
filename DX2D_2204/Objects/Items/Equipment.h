@@ -38,5 +38,5 @@ public:
 protected:
 	vector<Frame*> icon;
 	string key;
-	int level = 0;
+	int level = 1;
 };

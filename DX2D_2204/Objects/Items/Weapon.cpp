@@ -1,32 +1,26 @@
 #include "Framework.h"
 
-Weapon::Weapon(wstring filePath, string key, float dmg, float coolTime, int fireCount)
-	:Equipment(filePath, key), dmg(dmg), defaultCoolTime(coolTime), fireCount(fireCount)
+Weapon::Weapon(wstring filePath, string key, float dmg, float coolTime, float fireRate, int fireCount)
+	:Equipment(filePath, key), dmg(dmg), coolTime(CoolTime(coolTime)), gun(Gun(fireRate))
 {
+	gun.totalCount = fireCount;
 }
 
 void Weapon::Update()
 {
-	curCoolTime -= DELTA;
-	if (curCoolTime < 0)
+	coolTime.curTime -= DELTA;
+	if (coolTime.curTime < 0)
 	{
-		curCoolTime += coolTime;
-		//Fire();
+		coolTime.curTime += coolTime.fixedTime;
+		isFire = true;
 	}
-}
 
-void Weapon::SetCoolTime(float rate)
-{
-	coolTime = defaultCoolTime * (1.0f - rate);
-	curCoolTime = 0;
+	if (isFire)
+	{
+		Fire();
+	}
 }
 
 void Weapon::Fire()
 {
-	for (int i = 0; i < fireCount; i++)
-	{
-		//MISSILE->Fire(key, dmgFactor);
-		//목표 위치
-	}
-
 }
