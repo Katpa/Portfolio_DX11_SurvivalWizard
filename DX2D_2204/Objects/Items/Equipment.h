@@ -34,6 +34,10 @@ public:
 	virtual ~Equipment() = 0;
 
 	void Render();
+	void PowerUp(int addLevel);
+
+private:
+	virtual void SetPower() {}
 
 protected:
 	vector<Frame*> icon;

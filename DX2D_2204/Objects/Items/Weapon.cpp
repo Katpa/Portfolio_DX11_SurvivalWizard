@@ -23,4 +23,23 @@ void Weapon::Update()
 
 void Weapon::Fire()
 {
+	gun.curRate += DELTA;
+
+	if (gun.curRate > gun.defaultRate)
+	{
+		gun.curCount--;
+		gun.curRate -= gun.defaultRate;
+
+		//MissileManager::get()->Fire(key, pos);
+
+		if (!gun.curCount) return;
+		gun.curCount = gun.totalCount;
+		isFire = false;
+	}
+}
+
+void Weapon::SetPower()
+{
+	//WeaponData data = ataManager::Get()->LoadWeaponData(key, level);
+
 }

@@ -51,6 +51,9 @@ public:
 	void Fire();
 
 private:
+	virtual void SetPower() override;
+
+private:
 	bool isFire = false;
 
 	float dmg;

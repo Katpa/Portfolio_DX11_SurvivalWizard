@@ -16,3 +16,12 @@ void Equipment::Render()
 {
 	icon[level - 1]->Render();
 }
+
+void Equipment::PowerUp(int addLevel)
+{
+	level += addLevel;
+	if (level > 10)
+		level = 10;
+
+	SetPower();
+}
