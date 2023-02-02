@@ -35,11 +35,17 @@ public:
 	void Render();
 	void PowerUp(int addLevel);
 
+	//------------------------------------------------------------
+	//icon과 외부와의 정보적 연결시키기 위한 함수들
+	void SetParent(Transform* parent) { icon->SetParent(parent); }
+	Vector2& Position() { return icon->Position(); }
+	//------------------------------------------------------------
+
 private:
 	virtual void SetPower() {}
 
 protected:
-	vector<Frame*> icon;
+	Quad* icon;
 	string key;
 	int level = 1;
 };
