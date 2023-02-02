@@ -24,14 +24,13 @@ public:
 
 		return tmp;
 	}
-
 };
 
 class Equipment
 {
 public:
 	Equipment(wstring filePath, string key);
-	virtual ~Equipment() = 0;
+	virtual ~Equipment() = default;
 
 	void Render();
 	void PowerUp(int addLevel);

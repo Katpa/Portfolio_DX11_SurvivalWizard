@@ -1,10 +1,15 @@
 #include "Framework.h"
 
-Accessary::Accessary(wstring filePath, string key, Buff buff)
+Accessory::Accessory(wstring filePath, string key, Buff buff)
 	:Equipment(filePath, key), buff(buff)
 {
 }
 
-Accessary::~Accessary()
+Accessory::~Accessory()
 {
+}
+
+void Accessory::SetPower()
+{
+	//AccessoryData data = ataManager::Get()->LoadAccessoryData(key, level);
 }

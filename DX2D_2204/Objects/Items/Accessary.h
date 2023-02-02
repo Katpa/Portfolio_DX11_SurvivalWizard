@@ -1,12 +1,15 @@
 #pragma once
 
-class Accessary : public Equipment
+class Accessory : public Equipment
 {
 public:
-	Accessary(wstring filePath, string key, Buff buff);
-	~Accessary();
+	Accessory(wstring filePath, string key, Buff buff);
+	~Accessory();
 
 	Buff ReturnBuff() { return buff; }
+
+private:
+	virtual void SetPower() override;
 
 private:
 	Buff buff;
